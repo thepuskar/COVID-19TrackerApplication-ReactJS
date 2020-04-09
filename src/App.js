@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./App.css";
+import styles from "./App.module.css";
 
 import Cards from "./components/Cards/Cards";
 import Chart from "./components/Chart/Chart";
@@ -20,7 +20,7 @@ class App extends React.Component {
   render() {
     const { data } = this.state;
     return (
-      <div className="container">
+      <div className={styles.container}>
         <Cards data={data} />
         <Chart />
         <CountryPicker />
