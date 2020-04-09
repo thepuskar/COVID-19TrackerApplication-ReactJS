@@ -10,10 +10,10 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     return "Loading...";
   }
   return (
-    <div className="container">
+    <div className="cardContainer">
       <Grid container spacing={3} justify="center">
-        <Grid item component={Card} xs={12} md={3} className="card">
-          <CardContent>
+        <Grid item component={Card} xs={12} md={3} className="cardInfected">
+          <CardContent className="infected">
             <Typography color="textSecondary" gutterBottom>
               Infected
             </Typography>
@@ -31,8 +31,8 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography variant="body2">Number of active cases</Typography>
           </CardContent>
         </Grid>
-        <Grid item component={Card} xs={12} md={3} className="card">
-          <CardContent>
+        <Grid item component={Card} xs={12} md={3} className="cardRecovered">
+          <CardContent className="recovered">
             <Typography color="textSecondary" gutterBottom>
               Recovered
             </Typography>
@@ -50,8 +50,8 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography variant="body2">Number of recovered</Typography>
           </CardContent>
         </Grid>
-        <Grid item component={Card} xs={12} md={3} className="card">
-          <CardContent>
+        <Grid item component={Card} xs={12} md={3} className="cardDeath">
+          <CardContent className="death">
             <Typography color="textSecondary" gutterBottom>
               Death
             </Typography>
