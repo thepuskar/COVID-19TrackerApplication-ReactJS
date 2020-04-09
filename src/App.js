@@ -3,9 +3,11 @@ import React from "react";
 import Cards from "./components/Cards/Cards";
 import Chart from "./components/Chart/Chart";
 import CountryPicker from "./components/CountryPicker/CountryPicker";
+import Table from "./components/Table/Table";
 import Footer from "./components/Footer/Footer";
 
 import { fetchData } from "./api/";
+
 import styles from "./App.module.css";
 
 import image from "./images/corona.png";
@@ -38,6 +40,7 @@ class App extends React.Component {
           <Cards data={data} />
           <CountryPicker handleCountryChange={this.handleCountryChange} />
           <Chart data={data} country={country} />
+          <Table />
         </div>
         <Footer />
       </div>
