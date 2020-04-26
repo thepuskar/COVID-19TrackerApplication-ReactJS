@@ -13,7 +13,7 @@ class Table extends React.Component {
 
   componentDidMount() {
     this.setState({ loading: true });
-    fetch("https://corona.lmao.ninja/countries") //data source
+    fetch("https://corona.lmao.ninja/v2/countries") //data source
       .then((response) => response.json())
       .then((res) => {
         this.setState({ stats: res, loading: false }, () => console.log(res));
@@ -62,6 +62,8 @@ class Table extends React.Component {
             },
           }}
         />
+        
+    
       </React.Fragment>
     );
   }
