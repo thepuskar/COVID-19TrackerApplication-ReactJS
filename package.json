@@ -12,7 +12,7 @@
     "chart.js": "^2.9.3",
     "classnames": "^2.2.6",
     "material-table": "^1.57.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
     "react-countup": "^4.3.3",
